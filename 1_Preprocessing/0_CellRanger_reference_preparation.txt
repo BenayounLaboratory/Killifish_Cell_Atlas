@@ -1,0 +1,44 @@
+
+### cleaning up the assembly
+#### gffread-0.12.1.OSX_x86_64
+gffread GCF_001465895.1_Nfu_20140520_genomic.gff -T -o GCF_001465895.1_Nfu_20140520_genomic_CLEAN.gtf --merge -K -d collapsed_loci_info.txt -E -F
+          
+##  Manually add exons (copied from CDS) for MT genes (by default only CDS from Refseq)
+#   MT scaffold is NC_011814.1
+
+### Property 'gene_id' not found in GTF line 1021773: NC_011814.1	RefSeq	exon	1	69	.	+	.	transcript_id "rna-NC_011814.1:1..69";
+### => MT tRNA genes did not have gene id, remove these manually
+
+## filtering using cellranger:
+	cellranger mkgtf GCF_001465895.1_Nfu_20140520_genomic_CLEAN_MT_exon.gtf GCF_001465895.1_Nfu_20140520_genomic_CLEAN_MT_exon.filtered.gtf \
+                   --attribute=gene_biotype:protein_coding \
+                   --attribute=gene_biotype:lncRNA \
+                   --attribute=gene_biotype:C_region \
+                   --attribute=gene_biotype:V_segment
+
+# clean up FishTEDB assembly for lower redundancy
+cat 2021-09-06_FishTEDB_Nothobranchius_furzeri.cdhit90perc.fa | grep '>' > Repeat_names_FishTEDB_postCDHIT.txt
+##cat Repeat_names_FishTEDB_postCDHIT.txt | wc -l # 2453
+##cat Repeat_names_FishTEDB_postCDHIT.txt | sort -u| wc -l #2453
+
+# run repeatmasker to hard mask the killifish genome
+RepeatMasker -e ncbi -pa 1 -lib 2021-09-06_FishTEDB_Nothobranchius_furzeri.cdhit90perc.fa -dir 2021-11-26_RepeatMasker GCF_001465895.1_Nfu_20140520_genomic.fa
+
+# prep lower redundancy library
+process_repeat_library_for_10x_v3.pl FishTEDB_NR 2021-09-06_FishTEDB_Nothobranchius_furzeri.cdhit90perc.fa
+
+# make concatenated versions for cellranger genome generate step
+cat ./2021-11-26_RepeatMasker/GCF_001465895.1_Nfu_20140520_genomic.fa.masked 2021-09-06_FishTEDB_Nothobranchius_furzeri.cdhit90perc.clean.fa > 2021-12-02_GCF_001465895.1_MASKED_withFishTEDB_NR.fa
+cat GCF_001465895.1_Nfu_20140520_genomic_CLEAN_MT_exon.filtered.gtf 2021-09-06_FishTEDB_Nothobranchius_furzeri.cdhit90perc.gtf > 2021-12-02_GCF_001465895.1_MASKED_withFishTEDB_NR.gtf
+
+# Make reference for cellranger
+cellranger mkgtf  2021-12-02_GCF_001465895.1_MASKED_withFishTEDB_NR.gtf  2021-12-02_GCF_001465895.1_MASKED_withFishTEDB_NR.filtered.gtf \
+                   --attribute=gene_biotype:protein_coding \
+                   --attribute=gene_biotype:lncRNA \
+                   --attribute=gene_biotype:C_region \
+                   --attribute=gene_biotype:V_segment \
+                   --attribute=gene_biotype:pseudogene \
+                   --attribute=gene_biotype:transcribed_processed_pseudogene \
+                   --attribute=gene_biotype:Transposon
+
+cellranger mkref --genome=GCF_001465895.1_FishTEDB_NR --fasta=2021-12-02_GCF_001465895.1_MASKED_withFishTEDB_NR.fa --genes=2021-12-02_GCF_001465895.1_MASKED_withFishTEDB_NR.filtered.gtf  --nthreads=16  --memgb=128

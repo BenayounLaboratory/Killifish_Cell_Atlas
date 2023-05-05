@@ -1,0 +1,84 @@
+HSPCs	Thrombocytes	Erythrocytes	Neutrophils	Macrophages	B_cells	T_cells	NK_cells	Kidney_progenitors	Kidney_prox_tubule	Kidney_distal_tubule 	Epithelial	Kidney_Multiciliated 	Endothelial	Fibroblasts	Hepatocytes	Cholangiocytes
+si:dkey-257i7.5	itga2b	si.dkey.25o16.2	mpx	mfap4	zgc.153659	si.ch211.214p16.1	ccl38a.5	rbp4	aldob	si.ch211.139a5.9	epcam	h1f0	cxcl12a	col2a1a	fabp10a	anxa4
+tat	ctgfa	si.xx.by187g17.1	npsn	f13a1a.1	zgc.194275	dusp2	ccl38.6	fstl1b	ucp1	mb	cldnh	tuba7l	sele	col9a3	tfa	lgals2b
+BX005423.3	apln	slc4a1a	BX908782.3	marco	si.ch1073.78m18.1	BX784026.1	BX908792.2	col1a1b	TMEM27	si.ch73.359m17.9	spint2	si.ch73.111k22.3	kdrl	CR382372.1	cp	tm4sf4
+clec14a	thbs1b	si.ch211.103n10.5	si.ch211.9d9.1	si.ch211.147m6.2	si.dkey.234i14.9	sesn1	zbtb32	col1a1a	si.ch211.139a5.9	atp1a1a.4	sdc4	zgc.55461	cpn1	si:ch73-111k22.3	apoa1b	gramd1bb
+si:ch211-39k3.2	rpl9	alas2	lect2l	si.ch211.147m6.1	igl3c3	zap70	ccl38a.4	krt94	slc22a2	cdh17	tspan35	zgc.92249	cpn1	tuba7l	apoa2	gadd45bb
+GCNT4 (2 of 3)	srgn	hbaa1	adam8a	cxcl19	igic1s1	ccl34b.4	si.dkey.78l4.4	igfbp5b	sepp1a	bin2a	krt8	ckba	cdh5	CR847939.1	apoa2	klf6a
+ccr9a	rpl19	CR735126.1	ponzr6	si.dkey.5n18.1	cd74a	si.dkey.183p4.10	si.ch211.209l18.6	mfap5	pdzk1	glsb	krt18	sycp1	vsg1	pvalb6	fabp10a	
+CU207276.4	eef1g	cahz	cfl1l	havcr1	cd74b	btg1	si.dkey.21e2.12	sparc	gpt2l	atp1b1a	pfn2	si.dkey.40g16.5	sepp1a	ckba	apoa1b	
+atp1a3a	gnb2l1	blvrb	cpa5	lgals3bpb	mhc2dab	si.dkeyp.116a7.2	nitr2b	c6	fbp1b	sepp1a	cldnb	si.ch211.57h10.1	krt18	fank1	tfa	
+gchfr	rpl34	rhag	lyz	zgc.198419	dap1b	si.ch211.265g21.1	si.dkey.21e2.11	col1a2	gstt1a	cox5b2	spry2	ift46	col4a1	h1f0	fgg	
+fn1b	fn1b	ba1l	mpx	c1qc	rag2	il7r	lck				slco1f1		kdrl	si:dkey-11c5.11	wu:fj16a03	
+fgl2a	fgl2a	si:xx-by187g17.1	slc51a	c1qa	CD37	lck	zbtb32				slc34a1a		vegfa	fam166b	zgc:123103	
+itga2b	itga2b	hbaa1	BX908782.1	marco	CXCR5	themis	nkl.2				npr1b		fli1a		ambp	
+si.dkeyp.116a7.2	si.dkeyp.116a7.2	zgc:92880	ppp1r14aa	ms4a17a.10	si:dkey-24p1.1	zap70	ccl38.6				AL845369.3		kdrl		cbln8	
+tpm4a	tpm4a	ba1	rab11bb	c1qb	cd79b	bcl11ba	ccl34b.4				cfl1l		hand2		fetub	
+myh11a	myh11a	si:ch211-5k11.6	cpa5	si:dkey-5n18.1	ighz	cd4-1	si:dkey-21e2.12				CR318588.1		socs3a		rbp2b	
+gp1bb	gp1bb	si:ch211-207c6.2	lyz	lgals2a	igic1s1	cd8a	si:ch211-165b19.8				CR318588.4		igfbp7		zgc:113142	
+flna	flna	si:dkey-16p21.8	glrx2	slc3a2a	igl2v1	tbxas1	si:dkey-10h3.2				icn		hspb1		si:dkey-96g2.1	
+meis1b	meis1b	si:ch211-103n10.5	si:ch73-322b17.3	grna	igl2v2	gbas	MCTP1				icn2		fabp11a		dao.1	
+ahnak	ahnak	cahz	si:dkey-83k24.5	mafba	igl4c1	crnkl1	nkl.4				krt15		nppb		acot17	
+zfpm1	cd41	hbae2	ANPEP	marco	igl4v8	pigc	si:dkey-183i3.6				krt5		colec11		apoc1	
+tal1	itga2b	hbae3	lyz	grn1	CD37	MMP25..1.to.many.	zbtb32				krt91		mrc1a		si:dkey-35h6.1	
+mef2aa	apln	hbaa1	nccrp1	mfap4	igic1s1	sirt2	nkl.2				krt96		lyve1b		cbln14	
+zeb2a	si:ch73-308b14.1	hbaa2	mpx	cd74a	cd79a	usp25	ccl38.6				krt97		sele		si:ch211-113d11.5	
+meis1b	fn1b	cahz	cebpa	cd74b	cd79b	RRBP1..1.to.many.	il2rb				si:ch211-155m12.1		stab2		zgc:171534	
+gata1a	ctgfa	nt5c2l1	cebpe	marco	ighz	gemin2	jak3				si:ch211-95j8.3		CU927890.1		or109-11	
+mpl	fgl2a	cd74a	cpa5	mrc1b	pax5	sps2	nkl.4				si:dkey-193p11.2		gpr182		serpina7	
+si:ch211-161c3.6	flna	hbaa1	mmp13a	coro1a	igl2v2	il7r	prf1.8				si:dkey-248g15.3		rasip1		cbln5	
+mettl1	thbs1b	hbba1	lyz	cd63		trac	nitr2b				srd5a2b		stab1		cbln9	
+myca	si:dkeyp-116a7.2	si:ch211-5k11.8	mpx	mpeg1.1		sla2	tbc1d14						tie1		ccl39.2	
+cad	srgn	hbba2	mmp13a	mfap4		dusp2	syk						myct1a		zgc:172253	
+dkc1	tuba8l3	si:ch211-207c6.2	npsn	arl5c		FP236356.1	sh3bp2						notchl		cpb2	
+gnl3	ctgfa	hbaa2	scpp8	c1qb		cd59	myl12.2						myct1b		si:ch211-186e20.2	
+apex1	vegfc	CR388184.1	lect2l	grn1		cxcl32b.1	PRR5L						flt1		cbln17	
+cdk6	hbegfb	BX005417.1	ctssa	grn2		CR847844.1	klf12b						pecam1		cyp2x10.2	
+hells	tspan7	RF00609	cfl1l	marco		nitr2b	sept8a						si:ch211-33e4.2		tdrd5	
+snu13b	itga2b	creg1	ch25hl2	mfap4		ifng1-2	nitr1j						tie1		apobb.2	
+cmyb	fn1b	cd59	illr4	prf1.7		si:ch211-132g1.4	nitr7a						ecscr		AL953907.1	
+ikzf1	bmp16	CR383669.1	mpx	si:ch211-147m6.2		epd							myct1a		crp2	
+coro1a	ADM	epd	mmp13a	si:dkey-78l4.6		plp1b							scarf1		igfals	
+hmga1a	apln	plp1b	cdaa	zgc:173915		gzm3.3							rasip1		zgc:103559	
+fermt3b		ccl34b.1	lect2l	zgc:198419											cfhl3	
+top1		si:ch211-103n10.5	CABZ01040055.1	itgae.1												
+s1pr5b		si:ch211-250g4.3	si:ch1073-67j19.1	c1qa												
+tagapb		nt5e	lyz	NPC2 (1 of many)												
+si:ch211-103n10.5		slc6a22.2	BX908782.2	si:dkey-148a17.6												
+TCIM (1 of many)		si:ch211-207c6.2	hbba1	zgc:103700												
+drl		alas2	npsn	marco												
+zar1		hif1al2	grn1	c1qb												
+hif1al2		zgc:163057	si:ch211-5k11.8	mrc1b												
+si:dkey-261j4.4		MFAP4 (1 of many).10	si:ch211-9d9.1	ccl35.1												
+		CR293511.1	blf	si:ch211-194m7.4												
+			drl													
+			znfl2a													
+			stc1l													
+			si:dkey-261j4.4													
+			si:ch73-299h12.2													
+			TCIM													
+			si:ch1073-429i10.1													
+			si:dkeyp-75b4.10													
+			c6ast1													
+			si:dkey-77g12.1													
+			ch25hl2													
+			csf3b													
+			zgc:195023													
+			si:ch211-256a21.4													
+			si:dkey-203a12.8													
+			il1b													
+			myhc4													
+			si:ch211-264e16.2													
+			paplnb													
+			abcc13													
+			tnni2a.3													
+			si:dkey-42l23.4													
+			c6ast1													
+			si:dkey-238m4.4													
+			itln1													
+			CR354540.1													
+			pigrl2.3.1													
+			il4													
+			si:ch211-8c17.2													
+			ch25hl2													
+			si:ch73-170d6.3													
